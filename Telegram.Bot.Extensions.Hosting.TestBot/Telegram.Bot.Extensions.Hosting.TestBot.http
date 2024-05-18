@@ -1,0 +1,6 @@
+@Telegram.Bot.Extensions.Hosting.TestBot_HostAddress = http://localhost:5043
+
+GET {{Telegram.Bot.Extensions.Hosting.TestBot_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
