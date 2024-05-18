@@ -4,7 +4,36 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Version>1.0.0</Version>
     </PropertyGroup>
+
+    <PropertyGroup Label="Package">
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <Title>Telegram.Bot extensions for hosting</Title>
+        <Description>
+            Dependency Injection, handler, middleware for Telegram.Bot
+        </Description>
+        <PackageId>Telegram.Bot.Extensions.Hosting</PackageId>
+        <Authors>denissden</Authors>
+        <Copyright>Copyright © Deniss Den 2024</Copyright>
+        <PackageIcon>package-icon.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/denissden/Telegram.Bot.Extensions</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/denissden/Telegram.Bot.Extensions.git</RepositoryUrl>
+        <PackageTags>Telegram;Bot;Api;Extensions;</PackageTags>
+        <AllowedOutputExtensionsInPackageBuildOutputFolder>
+            $(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb
+        </AllowedOutputExtensionsInPackageBuildOutputFolder>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../package-icon.png" Pack="true" PackagePath="/"/>
+        <None Include="../README.md" Pack="true" PackagePath="/"/>
+    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
